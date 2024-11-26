@@ -26,7 +26,7 @@ Each entry has:
 - **`labels`**: (only in `train.json` and `val.json`) Contains label categories and spans of text corresponding to each label.
 
 ---
-### **3.Installation and Setup
+### **3. Installation and Setup
 
 To reproduce the results or test the model, follow these steps:
 
@@ -34,15 +34,21 @@ To reproduce the results or test the model, follow these steps:
 git clone <repository_url>
 cd <repository_directory>
 
-**Set Up Python Environment** It is recommended to use a virtual environment:
+**Set Up Python Environment** 
+It is recommended to use a virtual environment:
+
 python3 -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 
-**Install Dependencies** Install the required libraries:
+**Install Dependencies** 
+Install the required libraries:
+
 pip install -r requirements.txt
 
-**Load the Dataset** Ensure the train.json, val.json, and test.json files are in the root directory. Modify the file paths in model5.py if needed.
+**Load the Dataset** 
+Ensure the train.json, val.json, and test.json files are in the root directory. Modify the file paths in model5.py if needed.
 Run the best-performing model:
+
 python model5.py
 
 This will:
@@ -51,18 +57,7 @@ This will:
 * Evaluate the model on val.json and save the outputs (including the macro F1 score).
 * Results and Performance Analysis
 
-The best-performing model, model5.py, achieved a macro F1 score of 0.6652. Below are the training loss and validation F1 scores over 9 epochs:
-
-Epoch	Train Loss	Validation F1
-1	0.0602	        0.5703
-2	0.0384	       	0.6232
-3	0.0292	       	0.6633
-4	0.0215	       	0.6975
-5	0.0148	       	0.6839
-6	0.0098	       	0.6731
-7	0.0070	       	0.6908
-8	0.0050	       	0.6815
-9	0.0032	       	0.7052
+The best-performing model, model5.py, achieved a macro F1 score of 0.6652. 
 
 ---
 
