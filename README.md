@@ -26,7 +26,7 @@ Each entry has:
 - **`labels`**: (only in `train.json` and `val.json`) Contains label categories and spans of text corresponding to each label.
 
 ---
-### **3. Installation and Setup
+### 3. Installation and Setup
 
 To reproduce the results or test the model, follow these steps:
 
